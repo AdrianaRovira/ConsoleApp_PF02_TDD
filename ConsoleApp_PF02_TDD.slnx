@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ConsoleApp_PF02_TDD/ConsoleApp_PF02_TDD.csproj" />
+  <Project Path="FuncionesTest.cs/FuncionesTest.cs.csproj" />
+</Solution>
