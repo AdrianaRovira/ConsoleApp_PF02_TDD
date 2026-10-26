@@ -7,19 +7,13 @@ namespace ConsoleApp_PF02_TDD
     public class Funciones
     {
         
-        public static long CalcularFactorial(int n)
+        public static long CalcularFactorial(int numero)
         {
 
-            if(n < 0) return -1;
-            if(n == 0) return 1;
-
-            long resul = 1;
-
-            for(int i = 1; i <= n; i++)
-            {
-                resul *= i;
-            }
-            return resul;
+            if (numero < 0) return -1;
+            long resultado = 1;
+            for (int i = 2; i <= numero; i++) resultado *= i;
+            return resultado;
 
         }
 
