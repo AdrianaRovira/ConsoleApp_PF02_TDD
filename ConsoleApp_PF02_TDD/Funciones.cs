@@ -6,7 +6,7 @@ namespace ConsoleApp_PF02_TDD
 {
     public class Funciones
     {
-        //Definir la función sin implementación, para quitar errores de compilación y se puedan hacer los tests
+        
         public static long CalcularFactorial(int n)
         {
 
