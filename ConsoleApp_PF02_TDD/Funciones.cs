@@ -24,5 +24,10 @@ namespace ConsoleApp_PF02_TDD
         }
 
         //adrdeprov2627
+
+        public static bool EsContrasenyaValida(string contrasenya)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
