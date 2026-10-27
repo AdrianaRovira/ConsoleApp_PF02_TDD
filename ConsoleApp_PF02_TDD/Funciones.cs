@@ -27,7 +27,22 @@ namespace ConsoleApp_PF02_TDD
 
         public static bool EsContrasenyaValida(string contrasenya)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(contrasenya))
+            {
+                return false;
+            }
+
+            if (contrasenya.Length < 8)
+            {
+                return false;
+            }
+
+            if (!contrasenya.Contains("#"))
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }
