@@ -25,24 +25,8 @@ namespace ConsoleApp_PF02_TDD
 
         //adrdeprov2627
 
-        public static bool EsContrasenyaValida(string contrasenya)
-        {
-            if (string.IsNullOrEmpty(contrasenya))
-            {
-                return false;
-            }
-
-            if (contrasenya.Length < 8)
-            {
-                return false;
-            }
-
-            if (!contrasenya.Contains("#"))
-            {
-                return false;
-            }
-
-            return true;
-        }
+        //Refactorización de la función EsContrasenyaValida
+        public static bool EsContrasenyaValida(string contrasenya) =>
+     !string.IsNullOrEmpty(contrasenya) && contrasenya.Length >= 8 && contrasenya.Contains('#');
     }
 }
